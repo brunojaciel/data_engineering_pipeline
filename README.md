@@ -7,7 +7,7 @@ This repository contains a project of Python scripts and Airflow DAG (Directed A
 ## Project Structure
 
 **dags/: Directory containing Airflow DAG definition file.**
-**dags/answer_questions.py: Python script responsible for fetching data from Brasil.IO API, transforming it, and loading it into the PostgreSQL database.**
+**dags/etl_to_postgres.py: Python script responsible for fetching data from Brasil.IO API, transforming it, and loading it into the PostgreSQL database.**
 **dags/kafka_stream.py: Python script responsible for streaming data from Brasil.IO API into the Kafka topics.**
 **sql/: Directory containing SQL files used by the Airflow DAG.**
 **sql/create_table_db.sql: SQL script defining the table structure used to store the extracted data.**
@@ -18,4 +18,5 @@ This repository contains a project of Python scripts and Airflow DAG (Directed A
 ## Acknowledgments
 
 This project was created as a part of a data engineering task of challenge of Havan Labs.
+Thanks to the data science team at Havan labs for the challenge and tips.
 Thanks to Brasil.IO for providing access to the parliamentary expense data through their API.
